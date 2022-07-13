@@ -10,6 +10,14 @@ class Person {
     return this.#name;
   }
 
+  get manager() {
+    return this.#department.manager;
+  }
+
+  get chargeCode() {
+    return this.#department.chargeCode;
+  }
+
   get department() {
     return this.#department;
   }
