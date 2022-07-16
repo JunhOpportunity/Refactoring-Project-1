@@ -23,7 +23,7 @@ class Person {
   }
 
   set officeAreaCode(value) {
-    this.#telephoneNumber.areaCode = value;
+    this.#telephoneNumber.areaCode = new TelephoneNumber(value, this.officeNumber); // 하나라도 변경되면 새로운 것을 만든다
   }
 
   get officeNumber() {
