@@ -17,3 +17,6 @@ class Concert {
 
 // 예제 3
 function setSwitch(on);
+
+function switchOn();
+function switchOff();
